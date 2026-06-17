@@ -282,7 +282,7 @@ class OverlayWindow:
             fill=color,
             font=("Consolas", self.font_title_size, "bold"),
             anchor="s"
-        )
+        )   
 
     def run(self):
         self.root.mainloop()
@@ -413,6 +413,7 @@ class UltScanner:
 
 def main():
     # Get primary monitor resolution
+    ctypes.windll.shcore.SetProcessDpiAwareness(2)
     user32    = ctypes.windll.user32
     screen_w  = user32.GetSystemMetrics(0)
     screen_h  = user32.GetSystemMetrics(1)
