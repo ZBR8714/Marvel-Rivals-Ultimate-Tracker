@@ -1,3 +1,5 @@
+import warnings
+warnings.filterwarnings("ignore")
 """
 Marvel Rivals Ult Tracker Overlay
 ==================================
